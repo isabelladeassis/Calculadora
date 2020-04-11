@@ -9,11 +9,11 @@ function calcula(){
   }
 }
 
-function apagarEssaPorraToda(){
+function clean(){
   document.form.display.value="";
 }
 
-function apaga1caractere(){
+function back(){
   var salvo = document.form.display.value;
   document.form.display.value = salvo.substring(0, salvo.length-1)
 }
