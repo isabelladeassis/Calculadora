@@ -1,8 +1,8 @@
-function insereNaTela(num){
+function insert(num){
   document.form.display.value = document.form.display.value + num; 
 }
 
-function calcula(){
+function equal(){
   var valor = document.form.display.value;
   if(valor){
     document.form.display.value = eval(valor);
