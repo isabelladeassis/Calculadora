@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="calculadora">
+
+      <table>
+
+        <form name="form">
+          <input class="display" name="display"></input>
+        </form>
+
+        <tr>
+          <td><input class="button" type="button" value="C" onclick="apagarEssaPorraToda()"></input></td>
+          <td><input class="button" type="button" value="<" onclick="apaga1caractere()"></input></td>
+          <td><input class="button" type="button" value="/" onclick="insereNaTela('/')"></input></td>
+          <td><input class="button" type="button" value="*" onclick="insereNaTela('*')"></input></td>
+        </tr>
+
+        <tr>
+          <td><input class="button" type="button" value="7" onclick="insereNaTela('7')"></input></td>
+          <td><input class="button" type="button" value="8" onclick="insereNaTela('8')"></input></td>
+          <td><input class="button" type="button" value="9" onclick="insereNaTela('9')"></input></td>
+          <td><input class="button" type="button" value="-" onclick="insereNaTela('-')"></input></td>
+        </tr>
+
+        <tr>
+          <td><input class="button" type="button" value="4" onclick="insereNaTela('4')"></input></td>
+          <td><input class="button" type="button" value="5" onclick="insereNaTela('5')"></input></td>
+          <td><input class="button" type="button" value="6" onclick="insereNaTela('6')"></input></td>
+          <td><input class="button" type="button" value="+" onclick="insereNaTela('+')"></input></td>
+        </tr>
+
+        <tr>
+          <td><input class="button" type="button" value="1" onclick="insereNaTela('1')"></input></td>
+          <td><input class="button" type="button" value="2" onclick="insereNaTela('2')"></input></td>
+          <td><input class="button" type="button" value="3" onclick="insereNaTela('3')"></input></td>
+          <td rowspan="2"><input class="button" style="height:65px" type="button" value="=" onclick="calcula()"></input></td>
+        </tr>
+
+        <tr>
+          <td colspan="2"><input class="button" style="width:95px" type="button" value="0" onclick="insereNaTela('0')"></input></td>
+          <td><input class="button" type="button" value="." onclick="insereNaTela('.')"></input></td>
+        </tr>
+      </table>
+
+    </div>
+
+  </body>
+
+</html>
